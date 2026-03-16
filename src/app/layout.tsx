@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Outfit, Lora } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 import { CookieBanner } from "@/components/CookieBanner";
 import "./globals.css";
 
@@ -60,6 +61,7 @@ export default function RootLayout({
           </div>
         </noscript>
         {children}
+        <Analytics />
         <CookieBanner />
       </body>
     </html>
