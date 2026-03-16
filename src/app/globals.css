@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground: #0f172a;
+  --background: #fafafa;
+  --muted: #64748b;
+  --accent: #0ea5e9;
+  --accent-hover: #0284c7;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground: #f1f5f9;
+    --background: #0f172a;
+    --muted: #94a3b8;
+    --accent: #38bdf8;
+    --accent-hover: #0ea5e9;
+  }
+}
+
+/* Fallback dacă Tailwind întârzie – evită ecran negru */
+html {
+  background-color: #fafafa;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: #0f172a;
+  }
+}
+
+html {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+  min-width: 0;
+  color: var(--foreground);
+  background: var(--background);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
