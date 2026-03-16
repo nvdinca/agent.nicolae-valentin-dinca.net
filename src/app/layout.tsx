@@ -16,21 +16,21 @@ const lora = Lora({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://agent.nicolae-valentin-dinca.net"),
-  title: "Nicolae-Valentin Dinca - Portofolio - Global Real Estate Agent",
+  title: "Nicolae-Valentin Dinca - Portfolio - Global Real Estate Agent",
   description:
     "Your trusted partner in global real estate. Buying, selling, renting and investment properties across Europe, Middle East and Asia. We reply within 24h.",
   icons: {
     icon: "/favicon.svg",
   },
   openGraph: {
-    title: "Nicolae-Valentin Dinca - Portofolio - Global Real Estate Agent",
+    title: "Nicolae-Valentin Dinca - Portfolio - Global Real Estate Agent",
     description: "Your trusted partner in global real estate.",
     images: [
       {
         url: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80",
         width: 1200,
         height: 630,
-        alt: "Nicolae-Valentin Dinca - Portofolio - Global Real Estate Agent",
+        alt: "Nicolae-Valentin Dinca - Portfolio - Global Real Estate Agent",
       },
     ],
   },
